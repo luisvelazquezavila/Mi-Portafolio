@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
         <link rel="stylesheet" href="css/styles.css" />
         <title>Portfolio</title>
     </head>
@@ -35,18 +35,27 @@
                     </div>
                     <div class="card__header">
                         <h2 class="card__title">Luis Javier Velázquez Ávila</h2>
-                        <p class="card__subtitle">Aspirante a Front end developer</p>
+                        <p class="card__subtitle">Front end Developer</p>
                     </div>
                     <div class="card__body">
+                        <div class="card__link">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
+                        </div>
+                        <div class="card__link">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
+                        </div>
                         <div class="card__link">
                             <i class="fas fa-envelope icon"></i>
                             <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
                         </div>
                         <div class="card__link">
-                            <i class="fas fa-phone-alt icon"></i>
+                            <i class="fa-solid fa-mobile-screen"></i>
                             <a href="tel:5560188488">+52-5560188488</a>
                         </div>
                         <p class="card__text">Acerca de mi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam atque rem nisi. Ad vitae sunt nesciunt error aut fugit dolore ducimus ut, laudantium, labore fugiat! Et similique architecto aut saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="PDF/LUIS VELÁZQUEZ.pdf" download="" class="button button--primary">Descargar CV</a>
                     </div>
                 </arcticle>
                 
@@ -55,9 +64,14 @@
 
                     <div class="certificates">
                         <div class="certificates__image">
-                            <img src="assets/images/html-5.svg" alt="" class="certificates__img">
-                            <img src="assets/images/css-3.svg" alt="" class="certificates__img">
+                            <div class="certificates__picture">
+                                <img src="assets/images/html-5.svg" alt="" class="certificates__img">
+                            </div>
+                            <div class="certificates__picture">
+                                <img src="assets/images/css-3.svg" alt="" class="certificates__img">
+                            </div>                           
                         </div>
+                                                                                        
                         <a href="archivos/diploma-html-css.pdf" target="_blank">Curso Definitivo de HTML y CSS (Platzi)</a><br>
                         <a href="#" target="_blank">Curso Diseño Web Moderno Desde Cero a 
                             Avanzado HTML5 y CSS3 (Udemy)</a>
@@ -65,22 +79,33 @@
                         
                     <div class="certificates">
                         <div class="certificates__image">
-                            <img src="assets/images/javascript.svg" alt="" class="certificates__img">
+                            <div class="certificates__picture">
+                                <img src="assets/images/javascript.svg" alt="" class="certificates__img">
+                            </div>
+                            
                         </div>
                         <a href="#" target="_blank">Curso Básico de JavaScript (Platzi)</a>
                     </div>    
                         
                     <div class="certificates">
                         <div class="certificates__image">
-                            <img src="assets/images/git-icon.svg" alt="" class="certificates__img">
-                            <img src="assets/images/github-icon.svg" alt="" class="certificates__img">
+                            <div class="certificates__picture">
+                                <img src="assets/images/git-icon.svg" alt="" class="certificates__img">
+                            </div>
+                            <div class="certificates__picture">
+                                <img src="assets/images/github-icon.svg" alt="" class="certificates__img">
+                            </div>
+                                                      
                         </div>
                         <a href="#" target="_blank">Curso Profesional de Git y GitHub (Platzi)</a>
                     </div>    
 
                     <div class="certificates">
                         <div class="certificates__image">
-                            <img src="assets/images/webcomponents.svg" alt="" class="certificates__img">
+                            <div class="certificates__picture">
+                                <img src="assets/images/webcomponents.svg" alt="" class="certificates__img">
+                            </div>
+                            
                         </div>
                         <a href="#" target="_blank">Curso Básico de Web Components con JavaScript (Platzi)</a>
                     </div>
@@ -90,7 +115,7 @@
                 </arcticle>
                 
             </section>
-            <section class="column column--right">              
+            <sectio class="column column--right"> 
                 <arcticle class="card">
                     <h2 class="card__title">Front End</h2>
                     <div class="skills">
@@ -134,6 +159,7 @@
                         </div>                                       
                     </div>                   
                 </arcticle>
+                                 
                 <arcticle class="card card--project">
                     <div class="card__image-container">
                         <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
@@ -153,8 +179,170 @@
                         </div>
                     </div>
                 </arcticle>
+                <arcticle class="card card--project">
+                    
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">
+                    
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">
+                    
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">
+                    
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">
+                    
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>
+                <arcticle class="card card--project">                       
+                    <div class="card__image-container">
+                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JavaScript</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Landing Page</h2>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
+                        <div class="buttons">
+                            <a href="#" class="button button--primary">Demo</a>
+                            <a href="#" class="button button--ghost">Code</a>
+                        </div>
+                    </div>
+                </arcticle>  
+                <!-- <footer class="card footer">
+                    <p id="footer-copy" class="footer__copy">DorianDesings</p>
+                    <ul class="social-links">
+                      <li class="social-links__item">
+                        <i class="fa fa-twitter"></i>
+                      </li>
+                      <li class="social-links__item">
+                        <i class="fa fa-facebook"></i>
+                      </li>
+                      <li class="social-links__item">
+                        <i class="fa fa-youtube"></i>
+                      </li>
+                      <li class="social-links__item">
+                        <i class="fa fa-linkedin"></i>
+                      </li>
+                      <li class="social-links__item">
+                        <i class="fa fa-github"></i>
+                      </li>
+                      <li class="social-links__item">
+                        <i class="fa fa-twitch"></i>
+                      </li>
+                    </ul>
+                </footer> -->
             </section>    
         </main>
         <script src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/94cf6813bc.js" crossorigin="anonymous"></script>
     </body>
 </html>
