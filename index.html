@@ -4,65 +4,126 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
         <link rel="stylesheet" href="css/styles.css" />
         <title>Portfolio</title>
     </head>
+    
     <body class="dark">
         <header class="header">
+            
             <div class="switches">
-                <div id="toggle-theme" class="toggle-theme">
-                    <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
-                    <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+                 <div id="toggle-theme" class="toggle-theme">
+                    <img id="toggle-icon" src="assets/icons/sun.svg" alt="icon theme" class="toggle-theme__icon">
+                    <p id="toggle-text" class="toggle-theme__text">Light Mode</p>
+                </div>
+
+                <nav>             
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li class="active"> <a href="">INICIO</a></li>
+                        <li> <a href="">HABILIDADES</a></li>
+                        <li> <a href="">CERTIFICADOS</a></li>
+                        <li> <a href="">PORTAFOLIO</a></li>
+                        <li> <a href="">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                
+                <div id="toggle-colors" class="colors">
+                    <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+
+                    <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+    
+                    <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+    
+                    <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
                 </div>
             </div>
-            <div id="toggle-colors" class="colors">
-                <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
 
-                <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+            <div class="about container">
 
-                <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+                <figure class="about__picture">
+                    <img src="assets/images/Mi proyecto.png" alt="Foto de Luis Velázquez" class="about__img">
+                </figure>
 
-                <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
-            </div>
+                <div class="about__texts card">
+                    <h1 class="about__title">Hola, soy<span> Luis </span>Velázquez</h1>
+                    <p class="about__subtitle">Desarrollador Web</p>
+                    <p class="about__paragraph">Cuento con conocimientos avanzados de HTML y CSS, Javascript a nivel básico, Git/GitHub y Web Components.<br><br>Me encuebtro en constante aprendizaje y crecimiento, ya que tengo gran gusto e interés por el mundo del desarrollo web. 
+                         
+                    <div class="about__links">
+                        <div class="card__body">                          
+                            <a href="PDF/LUIS VELÁZQUEZ.pdf" download="" class="button button--primary">Descargar CV</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>     
+
         </header>
-        <main class="main">
-            <section class="column column--left">
-                <!-- PROFILE CARD -->
-                <arcticle class="card card--profile">       
-                    <div class="card__image-container">
-                        <img src="assets/images/Mi proyecto.png" alt="">
-                    </div>
-                    <div class="card__header">
-                        <h2 class="card__title">Luis Javier Velázquez Ávila</h2>
-                        <p class="card__subtitle">Front end Developer</p>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__link">
-                            <i class="fa-brands fa-github"></i>
-                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
-                        </div>
-                        <div class="card__link">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
-                        </div>
-                        <div class="card__link">
-                            <i class="fas fa-envelope icon"></i>
-                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
-                        </div>
-                        <div class="card__link">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                            <a href="tel:5560188488">+52-5560188488</a>
-                        </div>
-                        <p class="card__text">Acerca de mi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam atque rem nisi. Ad vitae sunt nesciunt error aut fugit dolore ducimus ut, laudantium, labore fugiat! Et similique architecto aut saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <a href="PDF/LUIS VELÁZQUEZ.pdf" download="" class="button button--primary">Descargar CV</a>
-                    </div>
-                </arcticle>
-                
-                <arcticle class="card card-certificates">
-                    <h2 class="card__title">Cursos/Certificaciones</h2>
 
-                    <div class="certificates">
+        <div class="main container">       
+            <section class="skills">
+                <h2 class="skills__title title">Habilidades</h2>
+                <div class="skills__container">
+                    <arcticle class="skills__card card">
+                        <h2 class="card__title">Front End</h2>
+                        <div class="skills__type">
+                            <div class="skills__item">
+                                <p class="skills__tech">HTML</p>
+                                <div class="skills__bar skills__bar--80"></div>
+                            </div>                    
+                            <div class="skills__item">
+                                <p class="skills__tech">CSS</p>
+                                <div class="skills__bar skills__bar--80"></div>
+                            </div>                    
+                            <div class="skills__item">
+                                <p class="skills__tech">JavaScript</p>
+                                <div class="skills__bar skills__bar--40"></div>
+                            </div>                    
+                        </div>                   
+                    </arcticle>
+    
+                    <arcticle class="skills__card card">
+                        <h2 class="card__title">Design</h2>
+                        <div class="skills__type">
+                            <div class="skills__item">
+                                <p class="skills__tech">PhotoShop</p>
+                                <div class="skills__bar skills__bar--40"></div>
+                            </div>                    
+                            <div class="skills__item">
+                                <p class="skills__tech">Figma</p>
+                                <div class="skills__bar skills__bar--60"></div>
+                            </div>                                     
+                        </div>                   
+                    </arcticle>
+    
+                    <arcticle class="skills__card card">
+                        <h2 class="card__title">Otros</h2>
+                        <div class="skills__type">
+                            <div class="skills__item">
+                                <p class="skills__tech">Git/GitHub</p>
+                                <div class="skills__bar skills__bar--80"></div>
+                            </div>                                       
+                            <div class="skills__item">
+                                <p class="skills__tech">Web Components</p>
+                                <div class="skills__bar skills__bar--60"></div>
+                            </div>                                       
+                        </div>                   
+                    </arcticle>
+                </div>
+                
+            </section>
+
+            <section class="certificates">
+
+                <h2 class="certificates__title title">Cursos / Certificaciones</h2>
+
+                <div class="certificates__container">
+                    <div class="certificates__item card">
                         <div class="certificates__image">
                             <div class="certificates__picture">
                                 <img src="assets/images/html-5.svg" alt="" class="certificates__img">
@@ -72,22 +133,22 @@
                             </div>                           
                         </div>
                                                                                         
-                        <a href="archivos/diploma-html-css.pdf" target="_blank">Curso Definitivo de HTML y CSS (Platzi)</a><br>
-                        <a href="#" target="_blank">Curso Diseño Web Moderno Desde Cero a 
-                            Avanzado HTML5 y CSS3 (Udemy)</a>
+                        <a href="archivos/diploma-html-css.pdf" target="_blank" class="certificates__document">- Curso Definitivo de HTML y CSS (Platzi)</a><br><br><br>
+                        <a href="#" target="_blank" class="certificates__document">- Curso Diseño Web Moderno Desde Cero a 
+                        Avanzado HTML5 y CSS3 (Udemy)</a>
                     </div>
                         
-                    <div class="certificates">
+                    <div class="certificates__item card">
                         <div class="certificates__image">
                             <div class="certificates__picture">
                                 <img src="assets/images/javascript.svg" alt="" class="certificates__img">
                             </div>
                             
                         </div>
-                        <a href="#" target="_blank">Curso Básico de JavaScript (Platzi)</a>
+                        <a href="archivos/diploma-basico-javascript.pdf" target="_blank" class="certificates__document">- Curso Básico de JavaScript (Platzi)</a>
                     </div>    
                         
-                    <div class="certificates">
+                    <div class="certificates__item card">
                         <div class="certificates__image">
                             <div class="certificates__picture">
                                 <img src="assets/images/git-icon.svg" alt="" class="certificates__img">
@@ -97,251 +158,82 @@
                             </div>
                                                       
                         </div>
-                        <a href="#" target="_blank">Curso Profesional de Git y GitHub (Platzi)</a>
+                        <a href="#" target="_blank" class="certificates__document">- Curso Profesional de Git y GitHub (Platzi)</a>
                     </div>    
-
-                    <div class="certificates">
+    
+                    <div class="certificates__item card">
                         <div class="certificates__image">
                             <div class="certificates__picture">
                                 <img src="assets/images/webcomponents.svg" alt="" class="certificates__img">
                             </div>
                             
                         </div>
-                        <a href="#" target="_blank">Curso Básico de Web Components con JavaScript (Platzi)</a>
+                        <a href="#" target="_blank" class="certificates__document">- Curso Básico de Web Components con JavaScript (Platzi)</a>
                     </div>
-                   
-                </arcticle>
-                    
-                </arcticle>
+                </div>
+                
                 
             </section>
-            <sectio class="column column--right"> 
-                <arcticle class="card">
-                    <h2 class="card__title">Front End</h2>
-                    <div class="skills">
-                        <div class="skills__item">
-                            <p class="skills__tech">HTML</p>
-                            <div class="skills__bar skills__bar--80"></div>
-                        </div>                    
-                        <div class="skills__item">
-                            <p class="skills__tech">CSS</p>
-                            <div class="skills__bar skills__bar--80"></div>
-                        </div>                    
-                        <div class="skills__item">
-                            <p class="skills__tech">JavaScript</p>
-                            <div class="skills__bar skills__bar--60"></div>
-                        </div>                    
-                    </div>                   
-                </arcticle>
-                <arcticle class="card">
-                    <h2 class="card__title">Design</h2>
-                    <div class="skills">
-                        <div class="skills__item">
-                            <p class="skills__tech">PhotoShop</p>
-                            <div class="skills__bar skills__bar--40"></div>
-                        </div>                    
-                        <div class="skills__item">
-                            <p class="skills__tech">Figma</p>
-                            <div class="skills__bar skills__bar--60"></div>
-                        </div>                                     
-                    </div>                   
-                </arcticle>
-                <arcticle class="card">
-                    <h2 class="card__title">Otros</h2>
-                    <div class="skills">
-                        <div class="skills__item">
-                            <p class="skills__tech">Git/GitHub</p>
-                            <div class="skills__bar skills__bar--80"></div>
-                        </div>                                       
-                        <div class="skills__item">
-                            <p class="skills__tech">WebComponents</p>
-                            <div class="skills__bar skills__bar--60"></div>
-                        </div>                                       
-                    </div>                   
-                </arcticle>
-                                 
-                <arcticle class="card card--project">
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
+
+            <section class="project">
+                <h2 class="project__title title">Proyectos</h2>
+                <div class="project__container">
+
+                        <arcticle class="project__card card">
+                        
+                            <div class="project__picture">
+                                <img src="assets/images/Proyecto Huddle.jpg" alt="Landing Page" class="project__img">
+                            </div>                              
+                               
+                            <div class="project__texts"> 
+                                <h2 class="card__title">Landing Page</h2>
+                                <p class="card__text">Desafío obtenido de FrontendMentor, que consiste en replicar una página web responsiva basándose en imágenes en las que se puede apreciar sus diferentes vistas, Móvil y Escritorio</p>
+                                <div class="project__tags">
+                                    <span class="project__tag">#HTML</span>
+                                    <span class="project__tag">#CSS</span>
+                                    <span class="project__tag">#Responsive</span>
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://luisvelazquezavila.github.io/Proyecto-Huddle/" class="button button--primary" target="_blank">Demo</a>
+                                    <a href="https://github.com/luisvelazquezavila/Proyecto-Huddle.git" class="button button--ghost" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </arcticle> 
+                </div>  
+            </section>
+
+            <section class="contacto">
+                <h2 class="contacto__title title">Contacto</h2>
+
+                <div class="contacto__container card">
+                    <div class="contacto__elements">
+                        <div class="contacto__link">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:luisvelazquezavila@gmail.com">luisvelazquezavila@gmail.com</a>
                         </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
+    
+                        <div class="contacto__link">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <a href="tel:5560188488">+52-5560188488</a>
                         </div>
                     </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
+    
+                    <div class="social__links">                   
+                        <div class="card__link">
+                            <i class="fa-brands fa-github contact__icon"></i>
+                            <a href="https://github.com/luisvelazquezavila"></a>
                         </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
+    
+                        <div class="card__link">
+                            <i class="fa-brands fa-linkedin contact__icon"></i>
+                            <a href="https://www.linkedin.com/in/luis-vel%C3%A1zquez-%C3%A1vila-48b28b25a/"></a>
                         </div>
                     </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>
-                <arcticle class="card card--project">
-                    
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>
-                <arcticle class="card card--project">                       
-                    <div class="card__image-container">
-                        <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JavaScript</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Landing Page</h2>
-                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt possimus blanditiis numquam assumenda, officia minima. A perferendis quae necessitatibus consequatur doloremque. Sint enim dolorum dicta rem eum, sit maxime.</p>
-                        <div class="buttons">
-                            <a href="#" class="button button--primary">Demo</a>
-                            <a href="#" class="button button--ghost">Code</a>
-                        </div>
-                    </div>
-                </arcticle>  
-                <!-- <footer class="card footer">
-                    <p id="footer-copy" class="footer__copy">DorianDesings</p>
-                    <ul class="social-links">
-                      <li class="social-links__item">
-                        <i class="fa fa-twitter"></i>
-                      </li>
-                      <li class="social-links__item">
-                        <i class="fa fa-facebook"></i>
-                      </li>
-                      <li class="social-links__item">
-                        <i class="fa fa-youtube"></i>
-                      </li>
-                      <li class="social-links__item">
-                        <i class="fa fa-linkedin"></i>
-                      </li>
-                      <li class="social-links__item">
-                        <i class="fa fa-github"></i>
-                      </li>
-                      <li class="social-links__item">
-                        <i class="fa fa-twitch"></i>
-                      </li>
-                    </ul>
-                </footer> -->
-            </section>    
-        </main>
+                </div>
+
+                
+            </section>
+
         <script src="js/scripts.js"></script>
         <script src="https://kit.fontawesome.com/94cf6813bc.js" crossorigin="anonymous"></script>
     </body>
