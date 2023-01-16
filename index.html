@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
                         <i class="fa-solid fa-bars"></i>
                     </label>
                     <ul>
-                        <li class="active"> <a href="#inicio">INICIO</a></li>
+                        <li class="active"> <a href="#inicio">Inicio</a></li>
                         <li> <a href="#habilidades">Habilidades</a></li>
                         <li> <a href="#certificados">Certificados</a></li>
                         <li> <a href="#portafolio">Portafolio</a></li>
@@ -51,7 +51,7 @@
                 <div class="about__texts card">
                     <h1 class="about__title">Hola, soy<span> Luis </span>Velázquez</h1>
                     <p class="about__subtitle">Desarrollador Web</p>
-                    <p class="about__paragraph">Cuento con conocimientos avanzados de HTML y CSS, Javascript a nivel básico, Git/GitHub y Web Components.<br><br>Me encuentro en constante aprendizaje y crecimiento, ya que tengo gran gusto e interés por el mundo del desarrollo web. 
+                    <p class="about__paragraph">Cuento con conocimientos avanzados de HTML y CSS, Javascript a nivel básico, Git/GitHub y Web Components.<br><br>Me encuebtro en constante aprendizaje y crecimiento, ya que tengo gran gusto e interés por el mundo del desarrollo web. 
                          
                     <div class="about__links">
                         <div class="card__body">                          
@@ -69,7 +69,7 @@
             <section class="skills">
                 <h2 class="skills__title title" id="habilidades">Habilidades</h2>
                 <div class="skills__container">
-                    <arcticle class="skills__card card">
+                    <arcticle class="skills__card card item">
                         <h2 class="card__title">Front End</h2>
                         <div class="skills__type">
                             <div class="skills__item">
@@ -123,7 +123,7 @@
                 <h2 class="certificates__title title" id="certificados">Cursos / Certificaciones</h2>
 
                 <div class="certificates__container">
-                    <div class="certificates__item card">
+                    <div class="certificates__item card item">
                         <div class="certificates__image">
                             <div class="certificates__picture">
                                 <img src="assets/images/html-5.svg" alt="" class="certificates__img">
@@ -178,16 +178,24 @@
             <section class="project">
                 <h2 class="project__title title" id="portafolio">Proyectos</h2>
                 <div class="project__container">
+                    <a href="#target">
+                        <figure class="open__modal">
+                            <img src="assets/images/Proyecto Huddle.jpg" alt="" class="modal__img">
+                        </figure>
+                    </a>            
+                </div>
 
-                        <arcticle class="project__card card">
-                        
+                <div class="modal__container">
+                    <div class="modal" id="target">        
+                        <div class="modal__content card" id="modal1">
+                            <a href="#modal1" class="modal__close">X</a>
                             <div class="project__picture">
                                 <img src="assets/images/Proyecto Huddle.jpg" alt="Landing Page" class="project__img">
                             </div>                              
-                               
-                            <div class="project__texts"> 
+                                       
+                            <div class="project__texts item"> 
                                 <h2 class="card__title">Landing Page</h2>
-                                <p class="card__text">Desafío obtenido de FrontendMentor, que consiste en replicar una página web responsiva basándose en imágenes en las que se puede apreciar sus diferentes vistas, Móvil y Escritorio</p>
+                                <p class="card__text">Desafío obtenido de FrontendMentor, que consiste en replicar una página web responsiva basándose en sus vistas de Móvil y Escritorio.</p>
                                 <div class="project__tags">
                                     <span class="project__tag">#HTML</span>
                                     <span class="project__tag">#CSS</span>
@@ -197,12 +205,13 @@
                                     <a href="https://luisvelazquezavila.github.io/Proyecto-Huddle/" class="button button--primary" target="_blank">Demo</a>
                                     <a href="https://github.com/luisvelazquezavila/Proyecto-Huddle.git" class="button button--ghost" target="_blank">Code</a>
                                 </div>
-                            </div>
-                        </arcticle> 
-                </div>  
+                            </div>    
+                        </div>     
+                    </div>  
+                </div>   
             </section>
 
-            <section class="contacto">
+            <section class="contacto container">
                 <h2 class="contacto__title title" id="contacto">Contacto</h2>
 
                 <div class="contacto__container card">
